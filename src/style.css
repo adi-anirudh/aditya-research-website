@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button:hover {
+  opacity: 0.92;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+  body main > div > div {
+    grid-template-columns: 1fr !important;
+  }
+
+  aside {
+    position: relative !important;
+    min-height: auto !important;
+  }
+
+  aside > div:last-child {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    margin-top: 28px;
+  }
+}
+
+@media (max-width: 720px) {
+  body main > div {
+    padding: 18px !important;
+  }
+
+  section {
+    padding: 26px !important;
+  }
+
+  div[style*="repeat(3"] {
+    grid-template-columns: 1fr !important;
+  }
+}
